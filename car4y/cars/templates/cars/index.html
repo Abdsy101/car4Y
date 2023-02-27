@@ -1,0 +1,11 @@
+
+{% for car in cars %}
+<div>
+    <h1>{{ car.brand }} {{ car.name }}</h1>
+    <p>Seats: {{ car.seats }}</p>
+    <p>Weight: {{ car.weight }}</p>
+    <p>Space: {{ car.space }}</p>
+    <h3>Price: {{ car.price }}</p>
+    <p>{{ car.description }}</p>
+</div>
+{% endfor %}
