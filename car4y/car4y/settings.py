@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "cars.apps.CarsConfig",
     "main.apps.MainConfig",
+    "contact.apps.ContactConfig",
+    "bootstrap5",
 ]
 
 MIDDLEWARE = [
