@@ -1,8 +1,24 @@
+{% extends "base.html" %}
 
+{% block content %}
 {% for contact in contacts %}
-<div>
-    <p>{{ contact.full_name }}</p>
-    <p>{{ contact.email }}</p>
-    <p>{{ contact.phone_number }}</p>
-</div>
+ 
+<section id="instructors" class="p-5 bg-dark">
+
+    <div class="container">
+      <h2 class ="text-center text-white"> worker </h2>
+      <p class="lead text-center text-white mb-5">here is some info about us</p>  
+             <div class="card" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ contact.full_name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ contact.email }}</h6>
+                <p class="card-text">{{ contact.phone_number }}</p>
+              </div>
+            </div>
+    </div>
+</section>
+
+  
 {% endfor %}
+{% endblock content %}
+{{ contact.phone_number }}{{ contact.email }}{{ contact.full_name }}

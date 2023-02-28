@@ -1,8 +1,58 @@
+{% extends "base.html" %}
 
+{% block content %}
 {% for info in page_data %}
-<div>
-    <h1>{{ info.title }}</h1>
-    <p>{{ info.description }}</p>
-    <p>{{ info.place }}</p>
-</div>
+
+ <section class= "bg-dark text-light p-5 text-center">
+
+    <div class="container">
+
+
+        <div>
+
+
+            <div class="aling-items-center justify_content-between">
+                <h1>{{ info.title }}</h1>
+                <p class="my-4">{{ info.description }}</p>
+                <button type="button" class="btn btn-info">
+                    <a href="/cars"></h7>Cars</h7></a>
+                </button>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+<section class= "bg-dark text-light p-5 text-center">
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+             <h2>location info</h2>
+             <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                    <span class=fw-bold>first location</span> 50.11 hamborg
+                </li> 
+             </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 {% endfor %}
+{% endblock content %}
+
+{{ info.title }}
+{{ info.description }}
+
+<div class="container">
+
+    <h1>{{ info.title }}</h1>
+<button type="button" class="btn btn-info">
+    <a href="/cars"></h7>Cars</h7></a>
+</button>
+</div>
